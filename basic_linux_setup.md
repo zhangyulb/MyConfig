@@ -12,3 +12,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted univers
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse  
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse  
 `apt-get update && apt-get dist-upgrade`  
+
+### Install packages
+`apt-get install python2.7`
