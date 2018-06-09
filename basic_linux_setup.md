@@ -16,3 +16,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
 ### Install packages
 `apt-get install aptitude`  
 `aptitude install python-pip python-dev build-essential`
+
+### Install Vim
+Refer to [Vim for Python](https://github.com/zhangyulb/python-vim/README.md)
