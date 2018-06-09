@@ -14,4 +14,5 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
 `apt-get update && apt-get dist-upgrade`  
 
 ### Install packages
-`apt-get install python2.7`
+`apt-get install aptitude`  
+`aptitude install python-pip python-dev build-essential`
