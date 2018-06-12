@@ -13,9 +13,17 @@ deb-src http://mirrors.163.com/ubuntu/ xenial-proposed main restricted universe 
 deb-src http://mirrors.163.com/ubuntu/ xenial-backports main restricted universe multiverse  
 `apt-get update`  
 
-### Install packages
+### 2. Install desktop (for Linux subsystem of Windows OS)
+1. Install X-Windows for Windows OS: [a link](https://sourceforge.net/projects/vcxsrv/)  
+2. Launch XLaunch, set “One large window" mode, and Display number = 0. Leave other configs as default.
+3. Install ubuntu desktop in the Linux subsystem: `sudo apt-get install ubuntu-desktop unity compizconfig-settings-manager`  
+NOTE: if this step fails at installing the ppp package due to the unavailability of gdm service, edit the script in /etc/init.d/pppd-dns and delete "gdm" from Required-Start.
+4. Configure the compiz manager: `echo DISPLAY=localhost:0 >> ~/.bashrc && source ~/.bashrc`, and run "ccsm" in Linux subsystem. Check "Ubuntu unity plugin" and leave other options as default.
+5. Close ccsm and run "compiz" in the Linux subsystem.
+
+### Install useful packages
 `apt-get install aptitude`  
 `aptitude install python-pip python-dev build-essential`
 
-### Install Vim
-Refer to [Vim for Python](https://github.com/zhangyulb/python-vim/README.md)
+### Install Sublime
+Refer to [My Sublime Settings](https://github.com/zhangyulb/python-vim/README.md)
