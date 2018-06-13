@@ -22,7 +22,7 @@ Remove all the content in sources.list and paste the following text into it:
 
 ### Install useful packages
 `apt-get install aptitude`  
-`aptitude install python2.7 python-pip python-dev python3-dev libncurses5-dev build-essential`
+`aptitude install python2.7 python-pip python-dev libncurses5-dev build-essential cmake`
 
 ## Configure github
 Cloning from github has been slow in China. Add the following IP addresses into host:  
