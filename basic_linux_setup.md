@@ -22,7 +22,12 @@ Remove all the content in sources.list and paste the following text into it:
 
 ### Install useful packages
 `apt-get install aptitude`  
-`aptitude install python-pip python-dev build-essential`
+`aptitude install python2.7 python-pip python-dev build-essential`
 
-### Install Sublime Text 3
-Refer to [My Sublime Text Settings](https://github.com/zhangyulb/python-vim/README.md)
+## Configure github
+Cloning from github has been slow in China. Add the following IP addresses into host:  
+`151.101.72.249 http://global-ssl.fastly.Net`  
+`192.30.253.112 http://github.com`  
+
+### Install VIM
+Refer to [My VIM Settings](https://github.com/zhangyulb/python-vim/README.md)
